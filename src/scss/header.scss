@@ -1,0 +1,219 @@
+//====================================================================================================
+.header {
+
+	// .header__wrapper
+	&__wrapper {
+		min-height: 151px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (min-width:$tablet){
+			align-items: flex-end;
+		}
+	}
+
+	// .header__container
+	&__container {
+		
+	}
+
+	// .header__logo
+	&__logo {
+		@media (min-width:$pc){
+			margin-right: rem(82); 
+		}
+	}
+
+	// .header__menu
+
+	&__menu {
+		
+	}
+
+	// .header__contacts
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: 'Geometria';
+		padding-top: 27px;
+		padding-right: 6px;
+		letter-spacing: -0.3px;
+		@media (min-width: $tablet) {
+			padding-right: 0;
+			padding-bottom: 10px; 
+		}
+		@media (min-width: $pc){
+			padding-bottom: 20px; 
+		}
+	}
+
+	// .header__tel
+
+	&__tel:link {
+		font-weight: 500;
+		font-size: rem(21);
+		line-height: 1.23;
+		// text-decoration: underline;
+		transition: color 0.3s ease 0s;
+		margin-bottom: 6px;
+		@media (min-width: $tablet) {
+			font-size: rem(25);
+			margin-bottom: 8px;
+			@media (any-hover: hover){
+				&:hover {
+					color: $mainColor;
+				}
+			}
+		}
+		@media (min-width:$pc){
+			font-size: rem(32);
+		}
+	}
+
+	// .header__contacts-text
+	&__contacts-text {
+		color: $mainColor;
+		font-weight: 500;
+		letter-spacing: 0;
+		@media (min-width:$tablet){
+			font-size: rem(20);
+		}
+	}
+}
+
+.logo {
+	font-family: "Acrom";
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 87px;
+	height: 79px;
+	@media (min-width:$tablet) {
+		width: 130px;
+		height: 118px;
+	}
+	@media (min-width:$pc) {
+		width: 223px;
+		height: 200px;
+		padding-top: rem(14);
+	}
+	// .logo__img
+	&__img {
+		width: 53px;
+	  height: 51px;
+		margin-bottom: 5px;
+		@media (min-width:$tablet) {
+			width: 90px;
+			height: 87px;
+		}
+		@media (min-width:$pc) {
+			width: 134px;
+			height: 130px; 
+		}
+	}
+
+	// .logo__text
+	&__text {
+		font-size: rem(12);
+		color: $accentColor;
+		font-weight: 800;
+		text-shadow: 0px 1.975px 11.85px rgba(30, 14, 220, 0.2);
+		@media (min-width:$tablet) {
+			font-size: rem(18); 
+		}
+		@media (min-width:$pc) {
+			font-size: rem(32); 
+		}
+	}
+}
+.menu {
+	display: none;
+	@media (min-width:$tablet)  {
+		display: block;
+		font-family: 'Geometria';
+		padding-bottom: rem(5); 
+	}
+	@media (min-width:$pc){
+		padding-bottom: rem(18); 
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		& li {
+			&:not(:last-child) {
+				margin-right: rem(55);
+				@media (min-width:$pc){
+					  margin-right: rem(80);
+				}
+			}
+		}
+	}
+
+	// .menu__link
+	&__link {
+		@media (min-width:$tablet){
+			font-size: rem(17);
+			font-weight: 500;
+			transition: color 0.3s ease 0s;
+			@media (any-hover: hover){
+				&:hover {
+					color: $mainColor;
+				}
+			}
+		}
+		@media (min-width:$pc) {
+			font-size: rem(20);
+		}
+	}
+}
+
+//====================================================================================================
+
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+		}
+		&::before {
+			top: 0px;
+		}
+		&::after {
+			bottom: 0px;
+		}
+		span {
+			top: calc(50% - 1px);
+		}
+		.menu-open & {
+			span {
+				transform: scale(0);
+			}
+			&::before {
+				transform: rotate(-45deg);
+				top: calc(50% - 1px);
+			}
+			&::after {
+				transform: rotate(45deg);
+				bottom: calc(50% - 1px);
+			}
+		}
+	}
+}
+*/

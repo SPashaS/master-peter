@@ -1,0 +1,61 @@
+//====================================================================================================
+.footer {
+  padding-bottom: rem(50);
+  // .footer__container
+  &__container {
+  }
+
+  // .footer__wrapper
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  // .footer__logo
+  &__logo {
+  }
+
+ // .footer__year
+
+  &__year {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    @media (min-width:$tablet){
+      font-size: 22px;
+    }
+    @media (min-width:$pc){
+      font-size: 32px;
+    }
+  }
+
+  // .footer__designer
+  &__designer {
+    img {
+      width: 22px;
+      height: 43px;
+      @media (min-width:$tablet){
+        width: 35px;
+        height: 70px;
+      }
+      @media (min-width:$pc){
+        width: 50px;
+        height: 100px;
+      }
+    }
+  }
+}
+.logo {
+  // .logo__img
+  &__img {
+  }
+
+  // .logo__text
+  &__text {
+  }
+}
+
+//====================================================================================================

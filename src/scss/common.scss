@@ -1,0 +1,203 @@
+// Заголовки, общие БЄМ блоки и проче...
+.bt-line {
+    position: relative;
+    @media (any-hover: hover) {
+        &:hover {
+            &::after {
+                background-color: $mainColor;
+            }
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        transition: all 0.3s ease 0s;
+        
+        @media (min-width: $tablet) {
+            height: 2px;
+        }
+    }
+}
+.main-title {
+    font-family: 'Geometria';
+    font-size: rem(34);
+    line-height: 1.1;
+    color: $mainColor;
+    letter-spacing: -0.3px;
+    @media (min-width:$pc){
+        font-size: 82px; 
+    }
+    span {
+        color: $accentColor;
+    }
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    @media (min-width:$tablet){
+        font-size: 40px;
+    }
+    @media (min-width:$pc){
+        font-size: 64px; 
+    }
+}
+
+.form {
+    // .form__row
+	&__row {
+        display: flex;
+        flex-direction: column;
+        gap: rem(22);
+        @media (min-width:$tablet) {
+            flex-direction: row;
+            &_sb {
+                justify-content: space-between;
+            }
+        }
+	}
+
+    &__tel,
+    &__btn {
+        height: rem(50);
+        @media (min-width:$tablet) {
+            height: rem(75);
+            width: rem(360);
+        }
+        @media (min-width:$pc) {
+            height: rem(100);
+            width: rem(467);
+        }
+    }
+
+    // .form__tel
+    &__tel {
+        border: 0.4px solid #EDAA46;
+        border-radius: 2px;
+        padding: 8px 4px;
+        font-size: rem(16);
+        font-weight: 300;
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.3);
+        }
+        &._form-error {
+            border-color: red;
+        }
+
+        @media (min-width:$tablet){
+            font-size: rem(23);
+        }
+        @media (min-width:$pc) {
+            font-size: rem(32);
+            padding: 8px;
+        }
+    }
+
+    // .form__btn
+    &__btn {
+        background: $mainColor;
+        box-shadow: 0px 2.07547px 8.30189px rgba(0, 0, 0, 0.25);
+        border-radius: 2.07547px;
+        font-weight: 700;
+        font-size: rem(22);
+        color: #FFFFFF;
+        transition: all 0.3s ease 0s;
+        @media (any-hover: hover){
+            &:hover{
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+                background-color: #ec9613;
+            }
+        }
+        @media (min-width:$pc){
+            font-size: rem(32); 
+        }
+    }
+
+    // .form__checkbox
+    &__checkbox {
+        display: grid;
+        grid-template-columns: 31% 47% 22%;
+        row-gap: 8px;
+        padding-bottom: 30px;
+        @media (min-width:$pc) {
+            grid-template-columns: 29.5% 49% 21.5%;
+            row-gap: 45px;
+            margin-right: rem(-45);
+            padding-bottom: 85px;
+        }
+    }
+
+    // .form__checkbox-item
+    &__checkbox-item {
+        display: inline-flex;
+        align-items: center;
+        input {
+            display: none;
+            &:checked + .form__checkbox-label {
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    // .form__checkbox-label
+	&__checkbox-label {
+        position: relative;
+        padding: rem(3) rem(3) rem(3) rem(29);
+        cursor: pointer;
+        @media (min-width:$pc){
+            padding: rem(3) rem(3) rem(3) rem(90);
+        }
+        &::after {
+            content:'';
+            position: absolute;
+            top: 1px;
+            right: 0;
+            bottom: 0;
+            left: 5px;
+            border: 0.3px solid #000000;
+            border-radius: 2px;
+            width: rem(19);
+            height: rem(19);
+            @media (min-width:$pc) {
+                left: 10px;
+                top: 5px;
+                border-radius: 5px;
+                border-width: 1px;
+                width: rem(47);
+                height: rem(47);
+            }
+        }
+        &::before {
+            content:'';
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translate(-50%, -50%);
+            background: center / cover no-repeat  url('../img/V.png');
+            width: rem(10);
+            height: rem(7);
+            transition: opacity 0.3s ease 0s;
+            opacity: 0;
+            @media (min-width:$pc){
+                left: 33px;
+                width: rem(20);
+                height: rem(15);
+            }
+        }
+	}
+
+	// .form__checkbox-text
+    &__checkbox-text {
+        @media (min-width:$pc){
+            font-size: rem(40); 
+        }
+	}
+}

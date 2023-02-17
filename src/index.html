@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Мастер Пётр - Ремонт бытовой техники c выездом на дом в Могилеве и Могилевской области"
+	})
+	<body>
+	  <div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main>
+				<article class="page">
+					<h1 class="main-screen__h1">Мастер Пётр - ремонт бытовой техники</h1>
+					<section class="page__main-screen main-screen">
+						<div class="main-screen__container">
+							<div class="main-screen__image">
+								<img src="@img/mainImage.jpg" alt="Ремонт бытовой техники">
+							</div>
+							<h2 class="main-screen__title main-title"><span>Ремонт</span><br>БЫТОВОЙ ТЕХНИКИ</h2>
+							<p class="main-screen__text">
+								С выездом на дом в Могилеве и Могилевской области
+							</p>
+							<form data-ajax  data-dev class="main-screen__form form" action="#">
+								<div class="form__row">
+									<input class="form__tel" type="tel" placeholder="Ваш номер телефона" data-error data-required autocomplete="off" name="form[]" autocomplete="off">
+									<button class="form__btn" type="submit">Вызвать мастера</button>
+								</div>
+							</form>
+						</div>
+					</section>
+					<section  class="page__we-work we-work">
+						<div class="we-work__container">
+							<h3 class="we-work__title title">
+								С какой техникой мы работаем 
+							</h3>
+							<ul class="we-work__grid">
+								<li class="we-work__item item-we-work">
+									<img src="@img/technique/1.png" alt="Ремонт духовых шкафов">
+									<span>Ремонт духовых<br>шкафов</span>
+								</li>
+								<li class="we-work__item item-we-work">
+									<img src="@img/technique/2.png" alt="Ремонт вытяжек">
+									<span>Ремонт вытяжек</span>
+								</li>
+								<li class="we-work__item item-we-work">
+									<img src="@img/technique/3.png" alt="Ремонт стиральных машин">
+									<span>Ремонт стиральных<br>машин</span>
+								</li>
+								<li class="we-work__item item-we-work">
+									<img src="@img/technique/4.png" alt="Ремонт пылесосов">
+									<span>Ремонт<br>пылесосов</span>
+								</li>
+								<li class="we-work__item item-we-work">
+									<img src="@img/technique/5.png" alt="Ремонт микровалновых печей">
+									<span>Ремонт<br>микровалновых<br>печей</span>
+								</li>
+								<li class="we-work__item item-we-work">
+									<img src="@img/technique/6.png" alt="Ремонт холодильников">
+									<span>Ремонт<br>холодильников</span>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="page__discount discount">
+						<div class="discount__container">
+							<div class="discount__wrapper">
+								<h2 class="discount__title main-title">
+									<span>ПОЛУЧИ</span><br>ПЕРСОНАЛЬНУЮ СКИДКУ ОТ 5% ДО 15%
+								</h2>
+								<p class="discount__text">Достаточно выбрать пунк и оставить заявку</p>
+								<form action="#" class="discount__form form">
+									<div class="form__checkbox">
+										<div class="form__checkbox-item">
+											<input id="discount1" type="radio" name="discount" value="Пенсионер">
+											<label class="form__checkbox-label" for="discount1"><span class="form__checkbox-text">Пенсионер</span></label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="discount2" type="radio" name="discount" value="Родитель-одиночка">
+											<label class="form__checkbox-label" for="discount2"><span class="form__checkbox-text">Родитель-одиночка</span></label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="discount3" type="radio" name="discount" value="Ветеран">
+											<label class="form__checkbox-label" for="discount3"><span class="form__checkbox-text">Ветеран</span></label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="discount4" type="radio" name="discount" value="Инвалид">
+											<label class="form__checkbox-label" for="discount4"><span class="form__checkbox-text">Инвалид</span></label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="discount5" type="radio" name="discount" value="Многодетная семья">
+											<label class="form__checkbox-label" for="discount5"><span class="form__checkbox-text">Многодетная семья</span></label>
+										</div>
+									</div>
+									<div class="form__row form__row_sb">
+										<input class="form__tel" type="tel" placeholder="Ваш номер телефона">
+										<button class="form__btn" type="submit">Вызвать мастера</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</section>
+					<div class="page__advantages advantages">
+						<div class="advantages__container">
+							<div class="advantages__grid">
+								<div class="advantages__item">
+									<img src="@img/advantages/1.png" alt="Гарантия">
+									<span>Гарантия на ремонт до 1 года</span>
+								</div>
+								<div class="advantages__item">
+									<img src="@img/advantages/2.png" alt="Любые видов поломок">
+									<span>Устранения  любых видов поломок</span>
+								</div>
+								<div class="advantages__item">
+									<img src="@img/advantages/3.png" alt="Быстрый выезд">
+									<span>Быстрый выезд мастера на место</span>
+								</div>
+								<div class="advantages__item">
+									<img src="@img/advantages/4.png" alt="Выезд на дом">
+									<span>Ремонт с выездом на дом</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<section class="page__work work">
+						<div class="work__container">
+							<h3 class="work__title title">
+								Как мы работаем
+							</h3>
+							<div class="work__wrapper">
+								<div class="work__item item-work">
+									<div class="item-work__content">
+										<div class="item-work__num">1</div>
+										<span class="item-work__title">Оставляете заявку</span>
+										<p class="item-work__text">
+											Свяжитесь с нами удобным для вас способом.
+										</p>
+									</div>
+									<img src="@img/our-works/1.png" alt="Оставляете заявку">
+								</div>
+								<div class="work__item item-work">
+									<div class="item-work__content">
+										<div class="item-work__num">2</div>
+										<span class="item-work__title">Консультация</span>
+										<p class="item-work__text">
+											Мастер с вами свяжеться чтобы лучше понять проблему.
+										</p>
+									</div>
+									<img src="@img/our-works/2.png" alt="Консультация">
+								</div>
+								<div class="work__item item-work">
+									<div class="item-work__content">
+										<div class="item-work__num">3</div>
+										<span class="item-work__title">Приезжает мастер</span>
+										<p class="item-work__text">
+											Мастер выезжает к вам и приступает к ремонту.
+										</p>
+									</div>
+									<img src="@img/our-works/3.png" alt="Приезжает мастер">
+								</div>
+								<div class="work__item item-work">
+									<div class="item-work__content">
+										<div class="item-work__num">4</div>
+										<span class="item-work__title">Все работает</span>
+										<p class="item-work__text">
+											Вы принимаете работу и оплачиваете ремонт.
+										</p>
+									</div>
+									<img src="@img/our-works/4.png" alt="Все работает">
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="page__breaking breaking">
+						<div class="breaking__container">
+							<h3 class="breaking__title title">
+								Виды поломок
+							</h3>
+							<div class="breaking__wrapper">
+								<div class="breaking__item item-breaking">
+									<img src="@img/breaking/1.png" alt="Пылесос">
+									<ul class="item-breaking__list">
+										<li class="item-breaking__item">Пылесос греется</li>
+										<li class="item-breaking__item">Пылесос не всасывает</li>
+										<li class="item-breaking__item">Пылесос шумит</li>
+										<li class="item-breaking__item">Пылесос не включается</li>
+									</ul>
+								</div>
+								<div class="breaking__item item-breaking">
+									<img src="@img/breaking/2.png" alt="Духовка">
+									<ul class="item-breaking__list">
+										<li class="item-breaking__item">Не включается</li>
+										<li class="item-breaking__item">Не нагревается</li>
+										<li class="item-breaking__item">Не закрывается дверь</li>
+										<li class="item-breaking__item">Не работает время</li>
+									</ul>
+								</div>
+								<div class="breaking__item item-breaking">
+									<img src="@img/breaking/3.png" alt="Микроволновка">
+									<ul class="item-breaking__list">
+										<li class="item-breaking__item">Не включается</li>
+										<li class="item-breaking__item">Не разагревет</li>
+										<li class="item-breaking__item">Плохо закрывается дверь</li>
+										<li class="item-breaking__item">Микроволновка шумит</li>
+									</ul>
+								</div>
+								<div class="breaking__item item-breaking">
+									<img src="@img/breaking/4.png" alt="Холодильник">
+									<ul class="item-breaking__list">
+										<li class="item-breaking__item">Холодильник не морозит</li>
+										<li class="item-breaking__item">Холодильник шумит</li>
+										<li class="item-breaking__item">Плохо закрывается дверь</li>
+										<li class="item-breaking__item">Холодильник протекает</li>
+									</ul>
+								</div>
+								<div class="breaking__item item-breaking">
+									<img src="@img/breaking/5.png" alt="Стиральная машина">
+									<ul class="item-breaking__list">
+										<li class="item-breaking__item">Не крутит барабан</li>
+										<li class="item-breaking__item">Протекает</li>
+										<li class="item-breaking__item">Шумит</li>
+										<li class="item-breaking__item">Плохо закрывается дверь</li>
+									</ul>
+								</div>
+								<div class="breaking__item item-breaking">
+									<img src="@img/breaking/6.png" alt="Вытяжка">
+									<ul class="item-breaking__list">
+										<li class="item-breaking__item">Вытяжка не включается</li>
+										<li class="item-breaking__item">Вытяжка шумит</li>
+										<li class="item-breaking__item">Вытяжка протекает</li>
+										<li class="item-breaking__item">Вытяжка вибрирует</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="page__testimonials testimonials">
+						<div class="testimonials__container">
+							<h3 class="testimonials__title title">Отзывы клиентов</h3>
+							<div class="testimonials__slider">
+								<div class="testimonials__swiper">
+									<div class="testimonials__slide testimonials-item">
+										<p class="testimonials-item__text">
+											Хочу поблагодарить мастера Петра за ремонт нашей машины самсунг. Очень вежливый и внимательный мастер.
+											<br>Большое спасибо.
+										</p>
+										<div class="testimonials-item__haeder">
+											<img src="@img/testimonials/man.png" alt="Мужчина">
+											<div class="testimonials-item__content">
+												<span>Битус О.Н.</span>
+												<span>04.10.2021</span>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide testimonials-item">
+										<p class="testimonials-item__text">
+											Машина перестала сливать воду. Мастер приехал очень быстро, за 40 минут. Почистил фильтр и в целом осмотрел машину.<br>
+											Обслуживание очень понравилось, будем обращаться еще.
+										</p>
+										<div class="testimonials-item__haeder">
+											<img src="@img/testimonials/woman.png" alt="Женщина">
+											<div class="testimonials-item__content">
+												<span>Чурилович Г.А.</span>
+												<span>11.05.2022</span>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide testimonials-item">
+										<p class="testimonials-item__text">
+											Как и договаривались, мастер приехал вовремя и взял с собой необходимые запчасти. Починил мою стиральную машину примерно за 40 минут. Я всем остался доволен, желаю дальнейшего развития вашей организации. Кстати, у порога снял обувь, чему я был приятно удивлен. Отдельное спасибо Петру, за проделанную работу!
+										</p>
+										<div class="testimonials-item__haeder">
+											<img src="@img/testimonials/man.png" alt="Мужчина">
+											<div class="testimonials-item__content">
+												<span>Андрей Е.</span>
+												<span>15.04.2020</span>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide testimonials-item">
+										<p class="testimonials-item__text">
+											Достойный сервис! Заменили подшипники в моей стиральной машинке, осталась всем довольна, вежливые мастера, по цене взяли, как и договаривались. Выписали 1год гарантии. Буду советовать своим знакомым. Спасибо!
+										</p>
+										<div class="testimonials-item__haeder">
+											<img src="@img/testimonials/woman.png" alt="Женщина">
+											<div class="testimonials-item__content">
+												<span>Инга Д.</span>
+												<span>18.03.2020</span>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide testimonials-item">
+										<p class="testimonials-item__text">
+											Мастер провел диагностику в моей стиральной машине, обнаружил неисправность тэна. На месте все заменил, машинка заработала. Осталась работой довольна, отдельное спасибо мастеру Петру, вежливый и опрятный мастер. Так держать ребята!
+										</p>
+										<div class="testimonials-item__haeder">
+											<img src="@img/testimonials/woman.png" alt="Женщина">
+											<div class="testimonials-item__content">
+												<span>Ольга О.</span>
+												<span>03.03.2021</span>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide testimonials-item">
+										<p class="testimonials-item__text">
+											Произошла утечка холодильника Атлант. Удивляюсь выдержке мастера, перелопатил весь холодильник но все таки нашел этот патрубок. Мастеру Петру, спасибо за работу. Гарантию выписал, как и обещал. Всем довольна. Развивайтесь в том же духе!
+										</p>
+										<div class="testimonials-item__haeder">
+											<img src="@img/testimonials/woman.png" alt="Женщина">
+											<div class="testimonials-item__content">
+												<span>Вероника В.</span>
+												<span>29.10.2022</span>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide testimonials-item">
+										<p class="testimonials-item__text">
+											Спасибо большое. Я осталась очень довольна вашими услугами. Мастер сам перезвонил несколько раз в этот день. Приехал и все сразу починил. Сам вежливый, всё горело в его руках. Было приятно с ним работать. Дай бог вам здоровья.
+										</p>
+										<div class="testimonials-item__haeder">
+											<img src="@img/testimonials/woman.png" alt="Женщина">
+											<div class="testimonials-item__content">
+												<span>Галина</span>
+												<span>12.04.2022</span>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide testimonials-item">
+										<p class="testimonials-item__text">
+											Очень приятный молодой человек! Позвонила и через час моя микроволновка уже была отремонтирована. Однозначно рекомендую мастера! Спасибо за оперативность и за адекватную цену за ремонт.
+										</p>
+										<div class="testimonials-item__haeder">
+											<img src="@img/testimonials/man.png" alt="Мужчина">
+											<div class="testimonials-item__content">
+												<span>Павел М</span>
+												<span>20.11.2022</span>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide testimonials-item">
+										<p class="testimonials-item__text">
+											Очень хороший мастер Петр. Приехал в строго оговоренное время. Приятный молодой человек. Отремонтировали СВЧ, сделал все быстро и качественно. Всем рекомендую.
+										</p>
+										<div class="testimonials-item__haeder">
+											<img src="@img/testimonials/man.png" alt="Мужчина">
+											<div class="testimonials-item__content">
+												<span>Иван С</span>
+												<span>09.09.2020</span>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="testimonials__slider-pagging"></div>
+							</div>
+						</div>
+					</section>
+					<section class="page__call call">
+						<div class="call__container">
+							<div class="call__content">
+								<h3 class="call__title title">
+									Звоните сейчас
+								</h3>
+								<div class="call__contacts">
+									<div class="call__contacts-item">
+										<a href="tel:375291417946" class="call__contacts-tel bt-line">+375(29)141-79-46</a>
+										<span class="call__contacts-operator">А1</span>
+									</div>
+									<div class="call__contacts-item">
+										<a href="tel:375297903971" class="call__contacts-tel bt-line">+375(29)790-39-71</a>
+										<span class="call__contacts-operator">МТС</span>
+									</div>
+								</div>
+								<p class="call__text">
+									или оставте номер и мы свяжемся с вами в ближайшее время
+								</p>
+							</div>
+							<form class="call__form form" action="#">
+								<div class="form__row form__row_sb">
+									<input class="form__tel" type="tel" placeholder="Ваш номер телефона">
+									<button class="form__btn" type="submit">Вызвать мастера</button>
+								</div>
+							</form>
+						</div>
+					</section>
+				</article>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
