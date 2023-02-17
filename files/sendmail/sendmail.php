@@ -11,14 +11,14 @@
 	$mail->IsHTML(true);
 
 	//От кого письмо
-	$mail->setFrom('info@fls.guru', 'Фрилансер по жизни');
+	$mail->setFrom('master-peter@mail.by', 'Мастер Пётр');
 	//Кому отправить
-	$mail->addAddress('code@fls.guru');
+	$mail->addAddress('skopecpas@gmail.com');
 	//Тема письма
-	$mail->Subject = 'Привет! Это "Фрилансер по жизни"';
+	$mail->Subject = 'Заявка';
 
 	//Тело письма
-	$body = '<h1>Встречайте супер письмо!</h1>';
+	$body = '<h1>Заявка!</h1>';
 
 	//if(trim(!empty($_POST['name']))){
 		//$body.='';
